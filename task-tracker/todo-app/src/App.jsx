@@ -19,6 +19,14 @@ function App() {
     setTasks(tasks.filter(t => t.id !== id));
   }
 
+  function toggleComplete(id) {
+    setTasks(
+      tasks.map(t =>
+        t.id === id ? { ...t, completed: !t.completed } : t
+      )
+    );
+  }
+
   return (
     <div>
       <form onSubmit={handleSubmit}>
@@ -34,10 +42,15 @@ function App() {
       <ul>
         {tasks.map((t) => (
           <li key={t.id}>
-            <span>{t.text}</span>
-            <button onClick={() => handleDelete(t.id)} aria-label={`Delete task: ${t.text}`}>
-              ❌
-            </button>
+            <input
+              type="checkbox"
+              checked={t.completed}
+              onChange={() => toggleComplete(t.id)}
+            />
+            <span style={{ textDecoration: t.completed ? "line-through" : "none" }}>
+              {t.text}
+            </span>
+            <button onClick={() => handleDelete(t.id)}>❌</button>
           </li>
         ))}
       </ul>
