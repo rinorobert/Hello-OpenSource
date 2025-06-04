@@ -1,12 +1,20 @@
-# React + Vite
+# React Persistent Task Manager
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+*A simple task management app built with React to practice hooks and localStorage.*
 
-Currently, two official plugins are available:
+## About  
+This project is a lightweight task manager I built during my BTech in Computer Science (Artificial Intelligence and Data Science) to deepen my understanding of React hooks, state management, and browser storage. It helps users add, complete, and delete tasks — with data saved locally for persistence.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- Add tasks with live updates  
+- Mark tasks as complete/incomplete  
 
-## Expanding the ESLint configuration
+## 🧠 Why This Project?
+This app was built during my internship as my first real project using React and Vite. It's part of my hands-on learning experience in modern web development. I'm exploring component-based UIs, state management, and how real apps persist data — all from the ground up.   
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Installation
+```bash
+git clone https://github.com/rinorobert/Hello-OpenSource.git
+cd task-tracker/todo-app
+npm install
+npm start
